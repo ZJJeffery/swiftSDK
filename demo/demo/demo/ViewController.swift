@@ -15,8 +15,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        NASSmartContracts.debug(debug: true) // use the debug net
         
+        if NASSmartContracts.nasNanoInstalled() {
+            // if wallet APP is not installed, go to AppStore.
+            NASSmartContracts.goToNasNanoAppStore()
+        }
         
+        NASSmartContracts.nasNanoInstalled()
     }
 
     override func didReceiveMemoryWarning() {
