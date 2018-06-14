@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +13,51 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfN-PM-Fyv">
+                                <rect key="frame" x="24" y="64" width="30" height="30"/>
+                                <state key="normal" title="Pay"/>
+                                <connections>
+                                    <action selector="pay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g8Y-v5-lWj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYo-vE-RYb">
+                                <rect key="frame" x="24" y="123" width="30" height="30"/>
+                                <state key="normal" title="Call"/>
+                                <connections>
+                                    <action selector="Call:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0wb-Rg-XH2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fp-2z-6Fe">
+                                <rect key="frame" x="24" y="184" width="92" height="30"/>
+                                <state key="normal" title="Check Stauts"/>
+                                <connections>
+                                    <action selector="CheckStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T2A-x0-CDF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yex-Cz-eG1">
+                                <rect key="frame" x="24" y="258" width="104" height="30"/>
+                                <state key="normal" title="Go to appStore"/>
+                                <connections>
+                                    <action selector="goToAppStore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V0D-jJ-CaY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7fp-2z-6Fe" firstAttribute="leading" secondItem="FfN-PM-Fyv" secondAttribute="leading" id="OGV-nG-bh0"/>
+                            <constraint firstItem="tYo-vE-RYb" firstAttribute="top" secondItem="FfN-PM-Fyv" secondAttribute="bottom" constant="29" id="SVQ-1p-ROP"/>
+                            <constraint firstItem="7fp-2z-6Fe" firstAttribute="top" secondItem="tYo-vE-RYb" secondAttribute="bottom" constant="31" id="XnF-eZ-4h9"/>
+                            <constraint firstItem="FfN-PM-Fyv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="fMs-0b-Ih8"/>
+                            <constraint firstItem="yex-Cz-eG1" firstAttribute="top" secondItem="7fp-2z-6Fe" secondAttribute="bottom" constant="44" id="fZ4-cT-kmy"/>
+                            <constraint firstItem="FfN-PM-Fyv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="rHG-Ca-hWw"/>
+                            <constraint firstItem="yex-Cz-eG1" firstAttribute="leading" secondItem="FfN-PM-Fyv" secondAttribute="leading" id="uXC-Ta-ZzC"/>
+                            <constraint firstItem="tYo-vE-RYb" firstAttribute="leading" secondItem="FfN-PM-Fyv" secondAttribute="leading" id="wMT-O9-DzS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

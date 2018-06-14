@@ -12,6 +12,7 @@
 		1483958D20D11D1000210BDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1483958B20D11D1000210BDB /* Main.storyboard */; };
 		1483958F20D11D1100210BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1483958E20D11D1100210BDB /* Assets.xcassets */; };
 		1483959220D11D1100210BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1483959020D11D1100210BDB /* LaunchScreen.storyboard */; };
+		1483959D20D11EAD00210BDB /* NASSmartContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483959C20D11EAD00210BDB /* NASSmartContracts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1483958E20D11D1100210BDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1483959120D11D1100210BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1483959320D11D1100210BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1483959C20D11EAD00210BDB /* NASSmartContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASSmartContracts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		1483957B20D11D1000210BDB = {
 			isa = PBXGroup;
 			children = (
+				1483959B20D11E9200210BDB /* swiftSDK */,
 				1483958620D11D1000210BDB /* demo */,
 				1483958520D11D1000210BDB /* Products */,
 			);
@@ -62,6 +65,15 @@
 				1483959320D11D1100210BDB /* Info.plist */,
 			);
 			path = demo;
+			sourceTree = "<group>";
+		};
+		1483959B20D11E9200210BDB /* swiftSDK */ = {
+			isa = PBXGroup;
+			children = (
+				1483959C20D11EAD00210BDB /* NASSmartContracts.swift */,
+			);
+			name = swiftSDK;
+			path = ../swiftSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1483958A20D11D1000210BDB /* ViewController.swift in Sources */,
+				1483959D20D11EAD00210BDB /* NASSmartContracts.swift in Sources */,
 				1483958820D11D1000210BDB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,8 +294,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9AQL9LZN62;
+				DEVELOPMENT_TEAM = QFRU78A4WE;
 				INFOPLIST_FILE = demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,8 +313,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9AQL9LZN62;
+				DEVELOPMENT_TEAM = QFRU78A4WE;
 				INFOPLIST_FILE = demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
