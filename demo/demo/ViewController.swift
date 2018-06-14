@@ -26,7 +26,11 @@ class ViewController: UIViewController {
 
     @IBAction func pay(_ sender: Any) {
         sn = NASSmartContracts.randomCodeWithLength(length: 32)
-        let error = NASSmartContracts.payNasWith(nas: 0.000001, address: "n1a4MqSPPND7d1UoYk32jXqKb5m5s3AN6wB", sn: sn, name: "test1", desc: "desc")
+        let error = NASSmartContracts.payNasWith(nas: 0.000001,
+                                                 address: "n1a4MqSPPND7d1UoYk32jXqKb5m5s3AN6wB",
+                                                 sn: sn,
+                                                 name: "test1",
+                                                 desc: "desc")
         if error != nil {
             print("\(String(describing: error?.userInfo["msg"]))")
             NASSmartContracts.goToNasNanoAppStore()
@@ -35,7 +39,13 @@ class ViewController: UIViewController {
     
     @IBAction func Call(_ sender: Any) {
         sn = NASSmartContracts.randomCodeWithLength(length: 32)
-        let error = NASSmartContracts.callWith(nas: 0, method: "save", args: ["key111","value111"], address: "n1zVUmH3BBebksT4LD5gMiWgNU9q3AMj3se", sn: sn, name: "test2", desc: "desc2")
+        let error = NASSmartContracts.callWith(nas: 0,
+                                               method: "save",
+                                               args: ["key111","value111"],
+                                               address: "n1zVUmH3BBebksT4LD5gMiWgNU9q3AMj3se",
+                                               sn: sn,
+                                               name: "test2",
+                                               desc: "desc2")
         if error != nil {
             print("\(String(describing: error?.userInfo["msg"]))")
             NASSmartContracts.goToNasNanoAppStore()
