@@ -69,8 +69,8 @@ let error = NASSmartContracts.callWith(nas: 0,
 
 ```swift
 NASSmartContracts.checkStatusWith(sn: sn, headler: { (dic) in
-print(dic)
+    print(dic)
 }) { (code, msg) in
-print("code:\(code),msg:\(msg)")
+    print("code:\(code),msg:\(msg)")
 }
 ```
