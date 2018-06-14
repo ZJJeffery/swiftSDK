@@ -36,9 +36,9 @@ if NASSmartContracts.nasNanoInstalled() {
 ### 3. Pay
 
 ```swift
-    sn = NASSmartContracts.randomCodeWithLength(length: 32)
-    let error = NASSmartContracts.payNasWith(nas: 0.000001,
-                                        address: "n1a4MqSPPND7d1UoYk32jXqKb5m5s3AN6wB",
+sn = NASSmartContracts.randomCodeWithLength(length: 32)
+let error = NASSmartContracts.payNasWith(nas: 0.000001,
+                                     address: "n1a4MqSPPND7d1UoYk32jXqKb5m5s3AN6wB",
                                              sn: sn,
                                            name: "test1",
                                            desc: "desc")
