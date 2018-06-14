@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "swiftSDK"
+  s.name         = "NASSwiftSDK"
   s.version      = "0.1.0"
   s.summary      = "NAS swiftSDK."
 
