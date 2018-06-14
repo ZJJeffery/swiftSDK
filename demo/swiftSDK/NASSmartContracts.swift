@@ -17,7 +17,7 @@ let NAS_CALLBACK = "https://pay.nebulas.io/api/mainnet/pay"
 let NAS_CHECK_URL = "https://pay.nebulas.io/api/mainnet/pay/query?payId="
 
 
-class NASSmartContracts: NSObject {
+public class NASSmartContracts: NSObject {
     
     static var kNASCallback:String = NAS_CALLBACK
     static var kNASCheckUrl:String = NAS_CHECK_URL

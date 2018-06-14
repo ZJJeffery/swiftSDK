@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1444D32520D26BA800DF021D /* NASSmartContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1444D32420D26BA800DF021D /* NASSmartContracts.swift */; };
 		1483958820D11D1000210BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483958720D11D1000210BDB /* AppDelegate.swift */; };
 		1483958A20D11D1000210BDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483958920D11D1000210BDB /* ViewController.swift */; };
 		1483958D20D11D1000210BDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1483958B20D11D1000210BDB /* Main.storyboard */; };
 		1483958F20D11D1100210BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1483958E20D11D1100210BDB /* Assets.xcassets */; };
 		1483959220D11D1100210BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1483959020D11D1100210BDB /* LaunchScreen.storyboard */; };
-		1483959D20D11EAD00210BDB /* NASSmartContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483959C20D11EAD00210BDB /* NASSmartContracts.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1444D2FE20D2647500DF021D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1444D32420D26BA800DF021D /* NASSmartContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NASSmartContracts.swift; sourceTree = "<group>"; };
 		1483958420D11D1000210BDB /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1483958720D11D1000210BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1483958920D11D1000210BDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +37,6 @@
 		1483958E20D11D1100210BDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1483959120D11D1100210BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1483959320D11D1100210BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1483959C20D11EAD00210BDB /* NASSmartContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASSmartContracts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +83,7 @@
 		1483959B20D11E9200210BDB /* swiftSDK */ = {
 			isa = PBXGroup;
 			children = (
-				1483959C20D11EAD00210BDB /* NASSmartContracts.swift */,
+				1444D32420D26BA800DF021D /* NASSmartContracts.swift */,
 			);
 			name = swiftSDK;
 			path = ../swiftSDK;
@@ -86,6 +99,7 @@
 				1483958020D11D1000210BDB /* Sources */,
 				1483958120D11D1000210BDB /* Frameworks */,
 				1483958220D11D1000210BDB /* Resources */,
+				1444D2FE20D2647500DF021D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,7 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1483958A20D11D1000210BDB /* ViewController.swift in Sources */,
-				1483959D20D11EAD00210BDB /* NASSmartContracts.swift in Sources */,
+				1444D32520D26BA800DF021D /* NASSmartContracts.swift in Sources */,
 				1483958820D11D1000210BDB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
