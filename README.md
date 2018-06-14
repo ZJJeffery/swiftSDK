@@ -6,7 +6,7 @@ pod 'swiftSDK'
 ## Attention: 
 add use_frameworks! in podfile
 
-##After pod install
+## After pod install
 import swiftSDK in white file you want to use
 
 ## Attention: 
