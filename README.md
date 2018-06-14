@@ -28,24 +28,24 @@ NASSmartContracts.debug(debug: true) // use the debug net
 
 ```swift
 if NASSmartContracts.nasNanoInstalled() {
-// if wallet APP is not installed, go to AppStore.
-NASSmartContracts.goToNasNanoAppStore()
+    // if wallet APP is not installed, go to AppStore.
+    NASSmartContracts.goToNasNanoAppStore()
 }
 ```
 
 ### 3. Pay
 
 ```swift
-sn = NASSmartContracts.randomCodeWithLength(length: 32)
-let error = NASSmartContracts.payNasWith(nas: 0.000001,
-address: "n1a4MqSPPND7d1UoYk32jXqKb5m5s3AN6wB",
-sn: sn,
-name: "test1",
-desc: "desc")
-if error != nil {
-print("\(String(describing: error?.userInfo["msg"]))")
-NASSmartContracts.goToNasNanoAppStore()
-}
+    sn = NASSmartContracts.randomCodeWithLength(length: 32)
+    let error = NASSmartContracts.payNasWith(nas: 0.000001,
+                                        address: "n1a4MqSPPND7d1UoYk32jXqKb5m5s3AN6wB",
+                                             sn: sn,
+                                           name: "test1",
+                                           desc: "desc")
+    if error != nil {
+        print("\(String(describing: error?.userInfo["msg"]))")
+        NASSmartContracts.goToNasNanoAppStore()
+    }
 ```
 
 ### 4. Call contract function
