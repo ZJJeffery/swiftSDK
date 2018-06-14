@@ -54,15 +54,15 @@ let error = NASSmartContracts.payNasWith(nas: 0.000001,
 sn = NASSmartContracts.randomCodeWithLength(length: 32)
 let error = NASSmartContracts.callWith(nas: 0,
                                     method: "save",
-args: ["key111","value111"],
-address: "n1zVUmH3BBebksT4LD5gMiWgNU9q3AMj3se",
-sn: sn,
-name: "test2",
-desc: "desc2")
-if error != nil {
-print("\(String(describing: error?.userInfo["msg"]))")
-NASSmartContracts.goToNasNanoAppStore()
-}
+                                    args: ["key111","value111"],
+                                    address: "n1zVUmH3BBebksT4LD5gMiWgNU9q3AMj3se",
+                                    sn: sn,
+                                    name: "test2",
+                                    desc: "desc2")
+    if error != nil {
+        print("\(String(describing: error?.userInfo["msg"]))")
+        NASSmartContracts.goToNasNanoAppStore()
+    }
 ```
 
 ### 5. Check status
