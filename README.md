@@ -53,7 +53,7 @@ let error = NASSmartContracts.payNasWith(nas: 0.000001,
 ```swift
 sn = NASSmartContracts.randomCodeWithLength(length: 32)
 let error = NASSmartContracts.callWith(nas: 0,
-method: "save",
+                                    method: "save",
 args: ["key111","value111"],
 address: "n1zVUmH3BBebksT4LD5gMiWgNU9q3AMj3se",
 sn: sn,
